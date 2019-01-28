@@ -25,15 +25,16 @@ export class PDFPage extends React.Component<PDFPageProps> {
     render() {
         return (
             <div
+                className="rpt-page"
                 style={{
+                    position: "relative",
                     background: "#ffffff",
                     height: this.props.pageSize[1] * 3 + "rem",
                     width: this.props.pageSize[0] * 3 + "rem",
                     padding: "1rem",
                     margin: "2rem",
                     fontSize: pointsToInches(1) * 3 + "rem",
-                    boxShadow:
-                        "0 0px 8px 0 rgba(0, 0, 0, 0.3), 0 0px 20px 0 rgba(0, 0, 0, 0.25)",
+                    boxShadow: "0 0px 8px 0 rgba(0, 0, 0, 0.3), 0 0px 20px 0 rgba(0, 0, 0, 0.25)",
                 }}
             >
                 {this.props.children}
